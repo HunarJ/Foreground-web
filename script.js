@@ -70,6 +70,7 @@ const openLightboxLink = document.getElementById('openLightbox');
     openLightboxLink.addEventListener('click', function (event) {
       event.preventDefault();
       lightboxContainer.style.display = 'block';
+      videoPlayer.play();
     });
     closeButton.addEventListener('click', function () {
       lightboxContainer.style.display = 'none';
@@ -93,3 +94,4 @@ window.addEventListener('scroll', function() {
     navbar.classList.remove('navbar-scrolled');
   }
 });
+

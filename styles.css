@@ -339,6 +339,11 @@ body {
   background: #141618;
 }
 
+.navbar-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* FIRST ROW */
 .architects {
   background-color: #1248f7;
