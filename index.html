@@ -39,7 +39,9 @@
       </nav>
       <div class="centered_title_div workshops fadeup">
         <p class="large_header workshops_header">3 DAYS OF <br />WORKSHOPS</p>
-        <p id="workshops_encounter" class="">526 Days 14 Hours 14 minutes 50 Seconds</p>
+        <p id="workshops_encounter" class="">
+          526 Days 14 Hours 14 minutes 50 Seconds
+        </p>
       </div>
     </section>
     <section class="web_body">
@@ -71,9 +73,11 @@
             </div>
           </div>
         </div>
-        <div class="image_bg_section quarter_page_container architect_video fadeup">
+        <div
+          class="image_bg_section quarter_page_container architect_video fadeup"
+        >
           <div class="helping_container container_inner_centered_div">
-            <div class="play_btn">
+            <div class="play_btn" id="openLightbox">
               <a
                 href="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2020/09/Uncode-Promo-2020.mp4"
               >
@@ -265,7 +269,9 @@
             </button>
           </div>
         </div>
-        <div class="image_bg_section quarter_page_container cityhotel_picture helping_container fadeup">
+        <div
+          class="image_bg_section quarter_page_container cityhotel_picture helping_container fadeup"
+        >
           <div class=""></div>
         </div>
       </div>
@@ -279,21 +285,28 @@
                 brand. Concept is the foundation of everything else.
               </p>
               <p class="pargraph_text">
-                Lets design a world thats thoughtful, considered and aesthetically
-                pleasing.
+                Lets design a world thats thoughtful, considered and
+                aesthetically pleasing.
               </p>
             </div>
           </div>
         </div>
-        <div class="image_bg_section quarter_page_container sponsors_picture helping_container fadeup">
+        <div
+          class="image_bg_section quarter_page_container sponsors_picture helping_container fadeup"
+        >
           <div class=""></div>
         </div>
-        <div class="half_page_container sponsors_logo_container helping_container fadeup">
+        <div
+          class="half_page_container sponsors_logo_container helping_container fadeup"
+        >
           <div class="logo_container">
             <div class="logo_row">
               <i class="fa-brands fa-yahoo fa-2xl" style="color: #ffffff"></i>
               <i class="fa-brands fa-google fa-2xl" style="color: #ffffff"></i>
-              <i class="fa-brands fa-invision fa-2xl" style="color: #ffffff"></i>
+              <i
+                class="fa-brands fa-invision fa-2xl"
+                style="color: #ffffff"
+              ></i>
               <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff"></i>
             </div>
             <div class="logo_row">
@@ -310,7 +323,7 @@
       </div>
       <footer>
         <div class="left_footer">
-          <i class="fa-regular fa-copyright" style="color: #ffffff;"></i>
+          <i class="fa-regular fa-copyright" style="color: #ffffff"></i>
           2023 Uncode. All rights reserved
         </div>
         <div class="right_footer">
@@ -319,6 +332,14 @@
           <i class="fa-brands fa-youtube footer_logo"></i>
         </div>
       </footer>
+      <!-- Lightbox container -->
+      <div class="lightbox" id="lightboxContainer">
+        <span class="close-button" id="closeButton">&times;</span>
+        <video controls autoplay id="videoPlayer">
+          <source src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2020/09/Uncode-Promo-2020.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
     <script src="script.js"></script>
   </body>

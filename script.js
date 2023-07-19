@@ -61,3 +61,35 @@ observer.observe(section);
 }
 
 });
+
+//Lihgtbox for video
+const openLightboxLink = document.getElementById('openLightbox');
+    const lightboxContainer = document.getElementById('lightboxContainer');
+    const closeButton = document.getElementById('closeButton');
+    const videoPlayer = document.getElementById('videoPlayer');
+    openLightboxLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      lightboxContainer.style.display = 'block';
+    });
+    closeButton.addEventListener('click', function () {
+      lightboxContainer.style.display = 'none';
+      videoPlayer.pause(); // Pause the video when closing the lightbox
+    });
+    lightboxContainer.addEventListener('click', function (event) {
+      if (event.target === lightboxContainer) {
+        lightboxContainer.style.display = 'none';
+        videoPlayer.pause(); // Pause the video when clicking outside the video
+      }
+    });
+
+//Change navbar on scroll
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  const scrolled = window.scrollY > 0;
+  // Add or remove the 'navbar-scrolled' class based on the scroll position
+  if (scrolled) {
+    navbar.classList.add('navbar-scrolled');
+  } else {
+    navbar.classList.remove('navbar-scrolled');
+  }
+});

@@ -80,8 +80,10 @@ body {
 @media only screen and (max-width: 900px) {
   /* NAVIGATION */
   .navbar {
-    height: 80px;
+    height: 50px;
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
   }
 
   .logo {
@@ -280,6 +282,32 @@ body {
 
 }
 
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+.lightbox video {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+/* Close button styles */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
 .fadeup {
   transform: translateY(50px);
   opacity: 0;
@@ -291,6 +319,24 @@ body {
  .in-view {
   transform: none;
   opacity: 1;
+}
+
+.navbar-scrolled{
+  background-color: #fff;
+}
+
+.navbar-scrolled .logo{
+  background-color: black;
+  color: #fff;
+}
+
+.navbar-scrolled .nav-list li a{
+  color: black;
+  transition: color 0.3s;
+}
+
+.navbar-scrolled .hamburger{
+  background: #141618;
 }
 
 /* FIRST ROW */
