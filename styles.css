@@ -8,10 +8,11 @@ body {
   flex-direction: column;
   width: 100%;
   margin: 0px 0px;
+  background-color: #141618;
 }
 
 .navbar {
-  background-color: none;
+  background-color: transparent;
   height: 80px;
   position: fixed;
   top: 0;
@@ -82,6 +83,7 @@ body {
     height: 80px;
     flex-wrap: wrap;
   }
+
   .logo {
     margin-right: auto;
   }
@@ -242,7 +244,7 @@ body {
 .main_section {
   background-image: url("./images/navigation-section.jpg");
   background-position: bottom;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -257,6 +259,38 @@ body {
   font-size: 2rem;
   margin: 10px 0px;
   font-family: "Times New Roman", Times, serif;
+}
+
+/* EFFECTS */
+
+.reveal-text{
+  opacity: 0;
+  animation: reveal 2s forwards;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translate(-40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+
+}
+
+.fadeup {
+  transform: translateY(50px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+ }
+
+ .in-view {
+  transform: none;
+  opacity: 1;
 }
 
 /* FIRST ROW */
@@ -305,9 +339,15 @@ body {
   cursor: pointer;
 }
 
+.counter_1{
+  background-color: #fff;
+  width: 100%;
+}
 .counter_number_1{
   color: #1248f7;
 }
+
+
 
 /* SECOND ROW*/
 .audience_container{
@@ -331,6 +371,10 @@ body {
 .schedule_right_container{
   background-color: #1248f7;
   color: #fff;
+}
+
+.schedule_left_container{
+  background-color: #fff;
 }
 
 /* THIRD ROW */
@@ -394,6 +438,9 @@ body {
   display: none;
 }
 
+.city_hotel{
+  background-color: #fff;
+}
 
 
 .reservation_btn{
@@ -478,7 +525,23 @@ footer_logo{
     flex-direction: column;
     align-items: start;
   } */
-  
+
+  .navbar-hover{
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+
+  .navbar-hover .nav-list li a{
+    color: black;
+    transition: color 0.3s;
+  }
+
+  .navbar-hover .logo{
+    background-color: black;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+
   /* MAIN SECTION */
   .main_section {
     justify-content: start;
@@ -527,6 +590,10 @@ footer_logo{
     align-items: center;
     margin: 0px;
     padding: 0px;
+  }
+
+  .counter_1 {
+    padding: 0px 0px;
   }
 
   .map_container{
