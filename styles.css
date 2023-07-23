@@ -485,8 +485,12 @@ body {
 
 /* fourth row */
 .map_container{
-  background-image: url("./images/map-image.png");
+  /* background-image: url("./images/map-image.png"); */
   display: none;
+}
+
+#map{
+  filter: grayscale(100%);
 }
 
 .city_hotel{
